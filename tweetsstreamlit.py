@@ -99,7 +99,7 @@ def scatterPlot():
     plt.xlabel('Tweets')
     plt.ylabel('Polarity & Subjectivity')
     fig, ax = plt.subplots()
-    ax = sns.scatterplot(data=data.iloc[:,1:2], hue='size',palette="deep",size="size",legend="full")
+    ax = sns.scatterplot(data=data.iloc[:,1:2])
     return fig
 
 st.pyplot(scatterPlot())
